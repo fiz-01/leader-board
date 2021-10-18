@@ -1,0 +1,274 @@
+/* common style */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#E5E5E5;
+    margin: 0;
+   
+}
+/* navbar starts */
+.nav-bar{
+   margin-bottom: 30px;
+    width: 100%;
+    height: 94px;
+    background: #562EFF;
+}
+
+
+.nav-items{
+   
+    display: flex;
+   
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    margin-left: 14%;
+    
+   
+    
+}
+.icon-image img{
+    
+    width: 40.42px;
+    height: 51px;
+    margin-top: 26px;
+    margin-bottom: 17px;
+}
+.icon-text{
+ margin-top: auto;
+ margin-bottom: auto;
+ margin-left: 15px;
+ font-family: Poppins;
+ font-style: normal;
+ font-weight: 100;
+ font-size: 24px;
+ color: #FFFFFF;
+}
+
+
+.menu{
+   
+   
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-right: 20%;
+    
+   
+}
+
+.menu-nav{
+    display: flex;
+    align-items: center;
+    padding-right: 21%;
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    background-color:#FFFFFF;
+    width: 1030px;
+    padding: 30px;
+    border-radius: 5px;
+    
+    
+    
+
+   
+}
+/* playes section */
+
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin: 0 0 20px;
+    
+}
+
+.players{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 5px;
+    
+   
+}
+.player{
+    display: flex;
+    align-items: center;
+  
+    
+}
+
+.player img{
+    
+    height: 56px;
+    width: 56px;
+}
+.player h3{
+    margin-left: 15px;
+}
+
+hr{
+    
+    width: 100%;
+    height: 0px;
+    left: 315px;
+    top: 410px;
+
+    border: 1px solid #D1D1D1;
+}
+
+
+/* Blog Section start here */
+
+.top-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.blog{
+    display: flex;
+}
+
+.blog-banner{
+    margin-right: 16px;
+}
+
+.blog-banner img{
+    height: 117px;
+    width: 177px;
+   
+}
+
+.blog-title p{
+    color: #9F9F9F;
+    font-size: 16px;
+
+}
+.blog-title a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Top Blog Section End */
+/* Course Section Start */
+.courses{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.course{
+    width:252.42px;
+    height:269.79px;
+    border-radius: 10px;
+    
+   
+}
+
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.course-title{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20.0336px;
+
+
+color: #1E1E1E; 
+}
+
+.course a{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14.6913px;
+
+
+
+color: #ED6B4F;
+
+}
+
+.course-sec{
+    margin-top: 20px;
+    
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.fade{
+    color: #AEAEAE;
+}
+
+#rate{
+    color: #A2A2A2;
+}
+
+.clock{
+    width: 94.83px;
+    height: 29.38px;
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 5px ;
+    padding-right: 5px;
+}
+
+/* media queri */
+@media only screen and (max-width:688px){
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .players, .top-blog, .courses{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .player, .blog, .course{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
